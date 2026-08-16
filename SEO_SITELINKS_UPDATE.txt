@@ -1,0 +1,19 @@
+VASUNDHARA GLOBAL EXPORTS - SEO / SITELINKS UPDATE
+
+Built without changing existing mobile CSS/layout rules.
+
+Added:
+- contact.html
+- request-quote.html
+- sitemap entries for both pages
+- semantic main-navigation JSON-LD on homepage
+
+Preserved as homepage sections:
+- Granite Collection (#products)
+- Global Markets (#markets)
+- Export Process (#order-process)
+- Certificates (#certificates)
+
+Updated internal CTAs to use the new dedicated Contact and Request Quote pages.
+
+Note: Google chooses sitelinks automatically. This update improves crawlable structure and internal navigation signals but cannot guarantee which sitelinks Google displays.
