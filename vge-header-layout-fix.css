@@ -1,0 +1,150 @@
+/* Desktop header: the company name stays on a single line.
+   Mobile (<=767px): restored original single-row header, with compact
+   two-line brand and side-by-side language and menu controls.
+   Markets stays hidden in top navigation only. */
+@media (min-width:768px) {
+html body .premium-header .premium-brand-copy strong::before,
+html body .premium-header .premium-brand-copy strong::after {
+  content: none !important;
+  display: none !important;
+}
+html body .premium-header .premium-brand-copy strong,
+html body .premium-header .premium-brand-copy strong.vge-mobile-brand-name {
+  display: block !important;
+  flex-direction: row !important;
+  width: max-content !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  font-family: Poppins, Inter, Arial, sans-serif !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -.25px !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  text-align: left !important;
+}
+  html body .premium-header .premium-brand-copy strong span {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+}
+@media (min-width:1181px) {
+  html body .premium-header .premium-nav {
+    display: flex !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 1780px !important;
+    min-height: 92px !important;
+    margin: 0 auto !important;
+    padding: 0 clamp(12px, 1.35vw, 26px) !important;
+    gap: clamp(8px, .8vw, 16px) !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    overflow: visible !important;
+  }
+  html body .premium-header .premium-brand {
+    display: flex !important;
+    position: static !important;
+    transform: none !important;
+    flex: 0 0 auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: clamp(7px, .75vw, 12px) !important;
+  }
+  html body .premium-header .premium-brand img {
+    width: clamp(61px, 5vw, 84px) !important;
+    height: 63px !important;
+    flex: 0 0 clamp(61px, 5vw, 84px) !important;
+    padding-right: 9px !important;
+    border-right: 1px solid #d1d5db !important;
+    box-sizing: border-box !important;
+  }
+  html body .premium-header .premium-brand-copy {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    gap: 4px !important;
+    overflow: visible !important;
+  }
+  html body .premium-header .premium-brand-copy strong {
+    font-size: clamp(14px, 1.18vw, 19px) !important;
+  }
+  html body .premium-header .premium-brand-copy small {
+    display: block !important;
+    white-space: nowrap !important;
+    font-size: clamp(7.4px, .6vw, 9px) !important;
+    letter-spacing: .6px !important;
+  }
+  html body .premium-header .premium-nav-links {
+    display: flex !important;
+    position: static !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
+    gap: clamp(7px, .75vw, 13px) !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    overflow: visible !important;
+  }
+  html body .premium-header .site-flow-link {
+    flex: 0 0 auto !important;
+    font-size: clamp(11.5px, .83vw, 14px) !important;
+    white-space: nowrap !important;
+  }
+  html body .premium-header .vge-language-wrap {
+    flex: 0 0 auto !important;
+    height: 46px !important;
+  }
+  html body .premium-header .vge-language-select {
+    box-sizing: border-box !important;
+    min-width: 98px !important;
+    width: 106px !important;
+    max-width: 106px !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    padding: 0 23px 0 25px !important;
+    font-size: 11px !important;
+  }
+  html body .premium-header .request-quotation-btn {
+    flex: 0 0 auto !important;
+    min-height: 50px !important;
+    margin-left: 0 !important;
+    padding: 0 clamp(10px, .9vw, 15px) !important;
+    font-size: clamp(11px, .82vw, 14px) !important;
+    white-space: nowrap !important;
+  }
+}
+@media (min-width:1181px) and (max-width:1399px) {
+  html body .premium-header .premium-nav { gap: 8px !important; padding-inline: 11px !important; }
+  html body .premium-header .premium-brand img { width: 64px !important; flex-basis: 64px !important; }
+  html body .premium-header .premium-brand-copy strong { font-size: 16px !important; }
+  html body .premium-header .premium-brand-copy small { font-size: 8px !important; letter-spacing: .35px !important; }
+  html body .premium-header .premium-nav-links { gap: 8px !important; }
+  html body .premium-header .site-flow-link { font-size: 12.2px !important; }
+  html body .premium-header .vge-language-select { width: 98px !important; min-width: 98px !important; }
+  html body .premium-header .request-quotation-btn { font-size: 12px !important; min-height: 46px !important; padding-inline: 10px !important; }
+}
+@media (min-width:768px) and (max-width:1180px) {
+  html body .premium-header .premium-brand {
+    flex: 1 1 auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+  html body .premium-header .premium-brand-copy {
+    display: flex !important;
+    flex-direction: column !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow: visible !important;
+  }
+  html body .premium-header .premium-brand-copy strong { font-size: clamp(15px, 1.9vw, 20px) !important; }
+  html body .premium-header .premium-brand-copy small { display: none !important; }
+}

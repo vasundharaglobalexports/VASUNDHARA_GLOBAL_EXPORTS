@@ -1,0 +1,28 @@
+VASUNDHARA GLOBAL EXPORTS - Single-Line Header Update
+Date: 10 November 2026
+
+REQUESTED CHANGES
+- The name VASUNDHARA GLOBAL EXPORTS is rendered on a single line in the site header across desktop, laptop, tablet, and mobile screen widths.
+- Removed the Markets item from the top navigation (including the mobile navigation drawer) on the seven main pages.
+- The Markets landing page and existing Markets footer links were intentionally retained.
+- Adjusted desktop header spacing to prevent the company name from colliding with the Home link, language selector, or quotation button.
+- On narrow phones the header uses two horizontal rows so the company name is not made unreadably small; language and menu controls remain accessible.
+
+FILES CHANGED
+- vge-header-layout-fix.css
+- index.html, about.html, granite-collection.html, monuments.html, markets.html, export-process.html, contact.html
+
+PRESERVED
+- Original website design and logo, existing product sections, Monuments catalogue and 36 monument designs.
+- Existing sitemap.xml with monuments.html and robots.txt.
+- Existing forms, product links, language options, and responsive mobile navigation.
+
+PREVIEW/TESTING
+- Header rendered using Chromium at 1920, 1600, 1440, 1366, 1280, 1181, 1180, 1024, 768, 767, 601, 600, 430, 390, 360, and 320 px.
+- Verified a single-line name, no company-name overlap with top menu links, and no header horizontal overflow at these sizes.
+- Verified mobile menu toggle opens and Markets is not in the menu.
+- This is a local package; it has not been published to the live domain.
+
+DEPLOYMENT
+- Upload this version to your hosting; preserve the folder contents as the site root.
+- Clear site/CDN/browser caches if the previous header CSS persists.

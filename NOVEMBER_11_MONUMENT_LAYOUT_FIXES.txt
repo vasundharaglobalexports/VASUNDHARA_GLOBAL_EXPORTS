@@ -1,0 +1,7 @@
+11 November 2026 — Vasundhara Global Exports website corrections
+- Monument details modal: viewport-constrained on desktop/laptop, full image fit on mobile, top-right Close x button (old stretched centered X corrected), accessible Escape/backdrop close preserved.
+- Monument product card buttons: responsive sizing and wrapping for laptop/phone.
+- Monument export inquiry: WhatsApp text converted to a clear green button.
+- Monuments page: new Looking for more granite options? section leads to granite-collection.html; granite products never expand under monuments.
+- Homepage: expandable granite catalogue moved to the granite collection region BEFORE the monuments section; existing toggle still works.
+- Desktop header remains single line and mobile header remains original two-line format, Markets omitted from top navigation. Other pages, SEO and sitemap retained.

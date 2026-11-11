@@ -1,0 +1,20 @@
+VASUNDHARA GLOBAL EXPORTS — Original website + Monuments section
+2026-11-10
+
+Design decision: original website retained. No redesign or replacement of original homepage, granite pages, brand, colours or content.
+
+Placement:
+- Top navigation: Monuments immediately after Collection on each existing page.
+- Homepage: new Monuments & Headstones feature immediately after the existing Granite Collection section.
+- New page: monuments.html — 9 categories and 36 named designs extracted from the supplied catalogue PDF, with search, filters, product detail modal, direct enquiry links, and download of original PDF.
+- Footers: new monument entry in Products on all pages.
+- Contact quote forms: new Monuments product choice; design-specific quotation links prefill the existing quote form's product and remarks.
+- SEO: new monuments.html canonical/meta/schema + sitemap entry and /monuments redirect.
+
+Preview:
+1. Open index.html inside this folder in a browser or serve with a static HTTP server.
+2. On Home, scroll below Granite Collection to find Monuments & Headstones.
+3. Click Monuments in the main navigation to open monuments.html.
+4. Click category or View Details and use Request this Design.
+
+Note: Quote submissions still use the website's existing Netlify form setup. Live delivery requires the site to be deployed/configured on its existing hosting provider. This file bundle is a review copy and does not replace the published site.

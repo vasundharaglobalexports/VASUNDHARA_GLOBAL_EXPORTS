@@ -1,0 +1,14 @@
+Final consistency update:
+- Added process.html (canonical Export Process page).
+- Updated all navigation Process links to process.html.
+- Synced index.html header and footer across all standalone HTML pages.
+- Synced approved index mobile header behavior across About, Catalogue, Markets, Process, Contact and Request Quote.
+- Added the fixed WhatsApp button to every HTML page for desktop and mobile.
+- Catalogue embed mode hides its own header/footer/WhatsApp only when embedded inside index.html to prevent duplication; standalone granite-collection.html shows them normally.
+- Updated sitemap.xml with all canonical public pages.
+
+- Added branded WhatsApp footer button beside Facebook, LinkedIn and Instagram across website footers.
+- Styled footer Request Quote as a blue icon button on mobile and desktop.
+- Preserved mobile header controls while product details are open on index.html.
+- Corrected mobile detail modal offset below sticky header.
+- Restored standalone granite collection footer on mobile while keeping embedded catalogue footer hidden.
