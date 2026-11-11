@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 # Legacy aliases: direct, single-hop permanent redirects to canonical pages.
+=======
+>>>>>>> origin/main
 /catalogue.html /granite-collection.html 301
 /catalogue /granite-collection.html 301
 /process.html /export-process.html 301
 /request-quote.html /contact.html#request-quotation 301
+<<<<<<< HEAD
 /request-quote /contact.html#request-quotation 301
 /monuments /monuments.html 301
+=======
+>>>>>>> origin/main

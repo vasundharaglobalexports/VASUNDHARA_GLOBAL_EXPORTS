@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 VASUNDHARA GLOBAL EXPORTS - SEO SETUP UPDATED 2026-11-10
 
 Canonical pages included in the sitemap:
@@ -5,10 +6,22 @@ Canonical pages included in the sitemap:
 - /about.html
 - /granite-collection.html
 - /monuments.html  <-- NEW MONUMENTS / HEADSTONES PAGE
+=======
+VASUNDHARA GLOBAL EXPORTS - FINAL GOOGLE SEO SETUP
+
+Homepage title:
+VASUNDHARA GLOBAL EXPORTS | Granite Exporter from India
+
+Canonical indexable pages in sitemap:
+- /
+- /about.html
+- /granite-collection.html
+>>>>>>> origin/main
 - /markets.html
 - /export-process.html
 - /contact.html
 
+<<<<<<< HEAD
 Legacy aliases in _redirects remain 301 redirects to their target URLs:
 /catalogue.html, /catalogue, /process.html, /request-quote.html,
 /request-quote and /monuments (extensionless).
@@ -29,3 +42,12 @@ and live redirect trace to determine the real cause. No live issue count or
 indexing result is guaranteed by a static code update alone.
 
 Instructions: see SEARCH_CONSOLE_FIXES_2026-11-10.txt.
+=======
+/request-quote.html is intentionally noindex because it redirects/canonicalizes to /contact.html#request-quotation.
+
+After live deployment:
+1. Resubmit sitemap.xml once in Google Search Console.
+2. Inspect each canonical page above and request indexing once if not already indexed.
+3. Do not repeatedly request indexing.
+4. Google may rewrite titles and chooses sitelinks/AI Overview automatically.
+>>>>>>> origin/main
