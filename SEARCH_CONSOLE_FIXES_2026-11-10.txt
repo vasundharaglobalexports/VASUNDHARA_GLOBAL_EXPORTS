@@ -1,0 +1,48 @@
+VASUNDHARA GLOBAL EXPORTS | SEARCH CONSOLE & MOBILE FIXES | 2026-11-10
+
+WHAT CHANGED IN THIS BUILD
+- Sitemap refreshed to list the seven preferred canonical website URLs, including
+  https://www.vasundharaglobalexports.com/monuments.html
+- Removed the duplicate /request-quote.html sitemap listing (old URL redirects).
+- Removed obsolete /request-quote.html physical file: previously it had a conflicting
+  self-referencing canonical and an index,follow meta directive despite a redirect rule.
+- Preserved /request-quote.html -> /contact.html#request-quotation as a single 301.
+- Added the extensionless /request-quote alias to the same destination.
+- Updated remaining internal links pointing to the old quotation URL, linking directly
+  to the existing Contact quotation form instead of passing through a redirect.
+- Kept existing self-canonicals on primary pages, including Monuments.
+- Corrected the Contact, Markets and Export Process hreflang alternates, which
+  previously referred incorrectly to the homepage instead of the current page.
+- Removed all visible monument product reference codes from cards and details, as well as
+  codes from enquiry links and search terms. Internal IDs remain in JS data for future management.
+- Changed monument category pills to wrap (no horizontal scrollbar). On mobile they form
+  a neat 2-column grid, with the All designs button full-width; cards are 1-column at <=460px.
+
+HOW THIS RELATES TO THE GOOGLE SEARCH CONSOLE SCREENSHOT
+- "Page with redirect" (2): often expected for legitimate 301 aliases; those old URLs
+  themselves should not be indexed. The goal is their final destination being indexable.
+- "Alternative page with proper canonical tag" (1): normally expected for duplicate
+  URL variations and is not necessarily a problem.
+- "Redirect error" (1): cannot be diagnosed conclusively without the EXACT AFFECTED URL
+  from Search Console and a live HTTP redirect trace. This build removes one source
+  of contradictory signals but does NOT claim the unknown live redirect error is fixed.
+
+DEPLOYMENT AND VERIFICATION
+1. Upload DEPLOY CONTENTS of this folder into the existing website's publish directory,
+   keeping _redirects, robots.txt, and sitemap.xml at the web root.
+2. Confirm your hosting provider supports the Netlify-style _redirects file. On other
+   platforms, implement equivalent permanent redirects in the platform's configuration.
+3. Verify live URLs (HTTP status, not just whether the page visually loads):
+   / => 200, /monuments.html => 200, /sitemap.xml => 200 application/xml,
+   /contact.html => 200, /request-quote.html => 301 -> /contact.html,
+   /catalogue.html => 301 -> /granite-collection.html.
+4. Confirm https://www.vasundharaglobalexports.com is the only intended host. Check the
+   non-www/www and http/https redirects in the hosting domain settings. Avoid loops.
+5. Search Console -> Sitemaps -> submit sitemap.xml after deployment, then inspect
+   /monuments.html and request indexing if URL Inspection permits.
+6. In Search Console Page indexing, click each not-indexed reason to see its specific URL;
+   diagnose any unresolved redirect error with that URL's live response chain.
+7. After verified live repairs, use "Validate fix" when appropriate; Google's reporting
+   and index selection may take time and are not controlled by this ZIP.
+
+NO LIVE DEPLOYMENT OR GOOGLE SEARCH CONSOLE ACCOUNT CHANGES WERE MADE.

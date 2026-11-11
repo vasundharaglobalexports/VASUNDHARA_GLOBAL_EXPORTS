@@ -1,0 +1,31 @@
+VASUNDHARA GLOBAL EXPORTS - SEO SETUP UPDATED 2026-11-10
+
+Canonical pages included in the sitemap:
+- /
+- /about.html
+- /granite-collection.html
+- /monuments.html  <-- NEW MONUMENTS / HEADSTONES PAGE
+- /markets.html
+- /export-process.html
+- /contact.html
+
+Legacy aliases in _redirects remain 301 redirects to their target URLs:
+/catalogue.html, /catalogue, /process.html, /request-quote.html,
+/request-quote and /monuments (extensionless).
+
+The historic request-quote.html file was removed because its own page tags
+claimed it was separately indexable, conflicting with its configured redirect.
+All original internal links to that page have been updated to point directly
+to /contact.html#request-quotation. The Contact page remains the quotation form.
+
+robots.txt lists the sitemap; the sitemap lists only canonical HTML pages.
+Monuments has a self-referential canonical tag and is fully linked in navigation.
+
+Google Search Console screenshot from November 10, 2026 displayed:
+8 Indexed / 4 Not indexed. Of the four, 'Page with redirect' and
+'Alternative page with proper canonical tag' can be normal when the target URL
+is indexable. The remaining 'Redirect error' needs its exact affected URL
+and live redirect trace to determine the real cause. No live issue count or
+indexing result is guaranteed by a static code update alone.
+
+Instructions: see SEARCH_CONSOLE_FIXES_2026-11-10.txt.
